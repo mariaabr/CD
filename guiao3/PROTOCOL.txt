@@ -1,0 +1,6 @@
+MESSAGE  			 JSON                                                                          PICKLE                                                               XML
+SubMessage 	         {"typemsg":"subscribe", "topic":"topic"}                                      {"typemsg":subscribe,  topic:topic}                                  "<?xml version=\"1.0\"?><data typemsg=\"{type}\" topic=\"{topic}\"></data>"
+PubMessage	    	 {"typemsg":"publish" , "topic":"topic" ,"message":"message"}                  {"typemsg":publish , "topic":topic ,"message":message}               "<?xml version=\"1.0\"?><data typemsg=\"{type}\" topic=\"{topic}\" message=\"{message}\"></data>"
+ListReqMessage 		 {"typemsg":"requestlist"}                                                     {"typemsg":requestlist}                                              "<?xml version=\"1.0\"?><data typemsg=\"{type}\"></data>"
+ListRepMessage 		 {"typemsg":"replylist" ,"lst":"topiclst"}                                     {"typemsg":replylist,"lst":topiclst}                                 "<?xml version=\"1.0\"?><data typemsg=\"{type}\" lst=\"{topiclst}\"></data>"
+unSubMessage 		 {"typemsg":"unsubscribe", "topic":"topic"}                                    {"typemsg":unsubscribe, "topic":topic}                               "<?xml version=\"1.0\"?><data typemsg=\"{type}\" topic=\"{topic}\"></data>"
